@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 :root {
   --background: #f8f8f8;
   --bg-muted-50: #{rgba(#f8f8f8, 0.5)};
@@ -9,7 +11,9 @@
   --dark: #2c2c2c;
   --secondary: #f1f2f9;
   --primary: #9047ff;
+  --primary-active: #{color.adjust(#9047ff, $lightness: -10%)};
   --secondary-button: #f1f2f9;
+  --primary-button-color: #f1f2f9;
 
   --status-danger: #ff3b30;
   --status-danger-active: #c91b11;

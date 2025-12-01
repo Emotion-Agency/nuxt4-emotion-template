@@ -60,7 +60,12 @@ const onSubmit = async () => {
         :errors="v$?.email?.$errors"
       />
 
-      <LoFiButton type="submit">Submit</LoFiButton>
+      <CustomButton type="submit">
+        <template #start-icon>
+          <Icon name="lucide:send" />
+        </template>
+        Submit
+      </CustomButton>
     </form>
   </main>
 </template>

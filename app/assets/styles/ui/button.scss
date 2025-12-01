@@ -1,0 +1,63 @@
+@use '../helpers' as *;
+
+@mixin button {
+  transition: all 0.4s $easing;
+  transition-property: background-color, filter;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+
+  &--primary {
+    background-color: var(--primary);
+    color: var(--primary-button-color);
+    &:hover {
+      background-color: var(--primary-active);
+    }
+  }
+  &--secondary {
+    background-color: var(--secondary);
+    color: var(--primary);
+    &:hover {
+      background-color: var(--border);
+    }
+  }
+  &--ghost,
+  &--ghost-primary,
+  &--ghost-danger {
+    border-radius: var(--rounded-full);
+    background-color: transparent;
+    color: var(--foreground);
+    &:hover {
+      background-color: var(--border);
+    }
+  }
+  &--ghost-primary {
+    color: var(--primary);
+  }
+
+  &--ghost-danger {
+    color: var(--status-danger);
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 1px solid var(--border);
+    &:hover {
+      background-color: var(--border);
+    }
+  }
+  &--danger {
+    background-color: var(--status-danger);
+    color: var(--primary-button-text);
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
