@@ -43,7 +43,7 @@ const onSubmit = async () => {
 </script>
 
 <template>
-  <main style="max-width: 500px" class="test flex flex-column gap-8 m-auto">
+  <main style="max-width: 500px" class="flex flex-column gap-8 m-auto">
     <h1>Hello from Emotion!</h1>
     <form class="flex flex-column gap-4" novalidate @submit.prevent="onSubmit">
       <InputField
@@ -69,9 +69,3 @@ const onSubmit = async () => {
     </form>
   </main>
 </template>
-
-<style lang="scss" scoped>
-.test {
-  background-color: var(--bg-muted-50);
-}
-</style>
