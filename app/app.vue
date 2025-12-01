@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import { useFonts } from '~/composables/fonts'
-
-useFonts()
-
 onMounted(async () => {
   const { hello } = await import('~/utils/hello')
   const { detectOrientationChanges } =

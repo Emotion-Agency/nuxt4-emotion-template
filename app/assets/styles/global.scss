@@ -18,10 +18,8 @@ html {
 
 body {
   color: var(--foreground);
-
   font-size: rem(16);
   position: relative;
-  font-family: sans-serif;
   overscroll-behavior-y: none;
   overflow: hidden;
   @include smooth-font;

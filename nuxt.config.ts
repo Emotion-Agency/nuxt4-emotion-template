@@ -31,7 +31,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@vueuse/nuxt', '@nuxt/eslint', '@nuxt/icon'],
+  modules: ['@vueuse/nuxt', '@nuxt/eslint', '@nuxt/icon', '@nuxt/fonts'],
 
   icon: {
     serverBundle: {
