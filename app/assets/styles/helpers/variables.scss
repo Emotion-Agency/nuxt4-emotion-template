@@ -1,6 +1,6 @@
 :root {
   --background: #f8f8f8;
-  --bg-muted-50: rgba(#f8f8f8, 0.5);
+  --bg-muted-50: #{rgba(#f8f8f8, 0.5)};
   --foreground: #000;
   --foreground-muted: #64698b;
   --border: #e2e4f0;
@@ -37,7 +37,7 @@
 
 .dark {
   --background: #121212;
-  --bg-muted-50: rgba(#121212, 0.5);
+  --bg-muted-50: #{rgba(#121212, 0.5)};
   --foreground: #fff;
   --foreground-muted: #a3a6c1;
   --border: #30343f;

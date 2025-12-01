@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { IInput, TInputEmits } from '~/types/input'
+import type { IInput, TInputEmits } from '~~/shared/types/input'
 
 const props = defineProps<IInput>()
 

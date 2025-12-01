@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { IButton } from '~/types/button'
+import type { IButton } from '~~/shared/types/button'
 
 const props = withDefaults(defineProps<IButton>(), {
   tag: 'button',

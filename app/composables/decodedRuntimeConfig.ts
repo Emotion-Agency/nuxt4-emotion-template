@@ -1,4 +1,4 @@
-import { decodeConfig } from '~/cli/decodeEnv'
+import { decodeConfig } from '~~/cli/decodeEnv'
 
 export const useDecocedRuntimeConfig = () => {
   const config = useRuntimeConfig()

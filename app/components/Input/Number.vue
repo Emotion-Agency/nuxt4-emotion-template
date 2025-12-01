@@ -6,7 +6,7 @@ import {
   NumberFieldRoot,
   type NumberFieldRootProps,
 } from 'reka-ui'
-import type { IInput } from '~/types/input'
+import type { IInput } from '~~/shared/types/input'
 
 const props = withDefaults(
   defineProps<

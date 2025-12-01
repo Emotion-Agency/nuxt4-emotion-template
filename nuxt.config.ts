@@ -1,14 +1,14 @@
 import { encodeConfig } from './cli/decodeEnv'
-import { pageTransition } from './transitions/base'
+import { pageTransition } from './shared/transitions/base'
 
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: '2025-12-01',
   devtools: { enabled: false },
 
   css: ['~/assets/styles/index.scss'],
 
   app: {
-    pageTransition: pageTransition as any,
+    pageTransition: pageTransition as unknown,
   },
 
   typescript: {
@@ -20,7 +20,6 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: '@use "~/assets/styles/helpers/index.scss" as *;',
-          api: 'modern-compiler',
         },
       },
     },

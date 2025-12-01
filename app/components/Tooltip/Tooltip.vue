@@ -6,7 +6,7 @@ import {
   type TooltipRootEmits,
   useForwardPropsEmits,
 } from 'reka-ui'
-import type { TooltipProps } from '~/types/tooltip'
+import type { TooltipProps } from '~~/shared/types/tooltip'
 
 const props = defineProps<TooltipProps>()
 const emits = defineEmits<TooltipRootEmits>()
