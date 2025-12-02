@@ -3,8 +3,8 @@ import { useMediaQuery } from '@vueuse/core'
 import { ref, computed, watch, onMounted } from 'vue'
 import { UAParser } from 'ua-parser-js'
 
-const isMatch = ref(false)
 export function useSSRMediaQuery(query: string) {
+  const isMatch = ref(false)
 
   // Server-side detection using UA
   if (import.meta.server) {
