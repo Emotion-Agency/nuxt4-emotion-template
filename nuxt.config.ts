@@ -23,6 +23,18 @@ export default defineNuxtConfig({
         },
       },
     },
+    optimizeDeps: {
+      include: [
+        '@emotionagency/emotion-scroll',
+        '@emotionagency/utils',
+        'gsap',
+        'gsap/Flip',
+        'gsap/ScrollTrigger',
+        '@vuelidate/core',
+        '@vuelidate/validators',
+        'reka-ui',
+      ],
+    },
   },
 
   eslint: {
