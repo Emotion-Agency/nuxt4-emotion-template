@@ -169,7 +169,7 @@ onBeforeUnmount(() => {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: var(--primary-button-text);
+  background-color: black;
 
   &:first-child {
     transform: rotate(45deg);
