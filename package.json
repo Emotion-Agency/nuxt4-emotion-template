@@ -26,7 +26,7 @@
     "typescript": "^5.6.3"
   },
   "dependencies": {
-    "@emotionagency/emotion-scroll": "/Users/leonid/Documents/projects/dev/libs/emotion-scroll",
+    "@emotionagency/emotion-scroll": "latest",
     "@emotionagency/utils": "^2.0.2",
     "@nuxt/fonts": "0.12.1",
     "@nuxt/icon": "^1.15.0",
